@@ -1,0 +1,15 @@
+# Tugas Praktikum 2
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065.00.21.00.012
+SELASA, 20210921
+
+"""
+
+print ('Hitung luas ruangan')
+p = float (input ('Masukkan Panjang Ruangan: '))
+q = float (input ('Masukkan Lebar Ruangan: '))
+r = input ('Masukkan satuan (Meter/Inci): ')
+s = p * q
+print ('Luas ruangan dengan panjang', p,'dan lebar', q, 'adalah: ', s,r)
+© 2021 GitHub, Inc.
