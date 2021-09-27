@@ -1,0 +1,18 @@
+# Tugas Latihan 2
+"""
+Nama: Alvito Yumna Satrio Arianto
+NIM: 065002100012
+Senin, 27/09/2021
+Judul: Latihan Praktikum 2
+"""
+import math
+a =float(input('Masukkan nilai a: '))
+b =float(input('Masukkan nilai b: '))
+
+print ('Jumlah a ditambah jumlah b adalah: ',a + b)
+print('Selisih antara a dan b adalah: ',a - b)
+print('Jumlah a dikali b adalah: ',a * b)
+print('Jumlah sisa pembagian dari hasil a dibagi b adalah: ',a % b)
+print('Jumlah a dibagi b adalah: ',a / b)
+print('Hasil dari log(a) adalah: ',math.log10(a))
+print('Hasil a pangkat b adalah: ',a ** b)
