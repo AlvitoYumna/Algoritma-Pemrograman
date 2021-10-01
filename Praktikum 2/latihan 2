@@ -13,7 +13,7 @@ lon1= float(input('Masukkan Longitude kota pertama = '))
 lat2= float(input('Masukkan Lattitude kota kedua = '))
 lon2= float(input('Masukkan Longitude kota kedua = '))
 
-R = 6371 
+R = 6371.01 
 
 dlat = math.radians(lat2-lat1)
 dlon = math.radians(lon2-lon1)
@@ -23,3 +23,4 @@ c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
 d = R * c 
     
 print ('jarak antara dua titik kota adalah',d ,'Kilometer')
+
