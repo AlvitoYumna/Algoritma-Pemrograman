@@ -1,0 +1,25 @@
+# TUGAS 2 PRAKTIKUM 2
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+KAMIS, 30/09/2021
+
+"""
+
+import math
+
+lat1= float(input('Masukkan lattitude kota pertama = '))
+lon1= float(input('Masukkan Longitude kota pertama = '))
+lat2= float(input('Masukkan Lattitude kota kedua = '))
+lon2= float(input('Masukkan Longitude kota kedua = '))
+
+R = 6371 
+
+dlat = math.radians(lat2-lat1)
+dlon = math.radians(lon2-lon1)
+a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) \
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+d = R * c 
+    
+print ('jarak antara dua titik kota adalah',d ,'Kilometer')
