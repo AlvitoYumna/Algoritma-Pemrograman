@@ -1,0 +1,22 @@
+# Tugas Latihan 1 Praktikum 3
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+SENIN, 04/10/2021
+"""
+
+print ('program ini untuk mengetahui jenis dari suatu segitiga dengan berdasarkan panjang sisi yang diberikan')
+
+a =float(input('panjang sisi A: '))
+b =float(input('panjang sisi B: '))
+c =float(input('panjang sisi C: '))
+
+if(a==b==c):
+        print ('Merupakan segitiga sama sisi ')
+elif((a + b <= c) or (a + c <= b) or (b + c <= a)):
+        print ('Bukan merupakan segitiga ')
+elif(a == b) or (a==c) or (b==c):
+        print ('Merupakan segitiga sama kaki')
+ 
+else:
+    print ('Merupakan segitiga sembarang')
