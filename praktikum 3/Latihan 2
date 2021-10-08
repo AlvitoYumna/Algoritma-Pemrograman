@@ -1,0 +1,36 @@
+#Tugas 2 Praktikum 3
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+JUM'AT,08/10/2021
+"""
+
+Na=int(input('Masukkan nilai A: '))
+Nb=int(input('Masukkan nilai B: '))
+Nc=int(input('Masukkan nilai C: '))
+
+import math
+D=(Nb**2)-(4*Na*Nc)
+
+if(Na==0):
+    print('Ini bukan merupakan persamaan kuadrat')
+elif(D==0):
+    x1=(-Nb/(2*Na))
+    print ('Persamaan kuadrat dari',Na,"x^2 +",Nb,"x +",Nc)
+    print ('Determinan: ',D)
+    print ('Ini merupakan akar kembar')
+    print ('akar',(x1))
+elif(D<0):
+    print ('Persamaan kuadrat dari',Na,'x^2 +',Nb,'x +',Nc)
+    print ('Determinan: ',D)
+    print ('Ini merupakan akar imajiner')
+    print (-Nb,'+ Akar',D,'/ 2 *',Na)
+    print (-Nb,'- Akar',D,'/ 2 *',Na)
+elif (D>0):
+    x1=(-Nb+(math.sqrt(D)))/(2*Na)
+    x2=(-Nb-(math.sqrt(D)))/(2*Na)
+    print('Persamaan kuadrat dari',Na,'x^2 + ',Nb,'x + ',Nc)
+    print('Determinan: ',D)
+    print('Ini memiliki akar yang berbeda')
+    print('Akar X1: ',x1)
+    print('Akar X2: ',x2)
