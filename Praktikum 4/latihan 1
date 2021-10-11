@@ -1,0 +1,14 @@
+# Tugas 1 Praktikum 4
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SENIN,11-OKTOBER-2021
+"""
+
+x = int(input('Masukkan Angka Maksimal: '))
+for b in range (x,0,-1):    
+    for k in range (1, b+1):
+        print (b, end = '')
+        
+    print ()
+    
