@@ -1,0 +1,39 @@
+# TUGAS 2 PRAKTIKUM 5
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+SELASA, 19-10-2021
+"""
+
+print ('Program ini akan menghitung harga tiket masuk kebun binatang sesuai dengan umur:)')
+
+n=0
+jumlah=0
+t=0
+
+while(n!=''):
+    n=float(input("Masukkan Usia: "))
+    t+=1
+    print ('Masukkan Angka 0 Untuk Menghitung')
+    
+    if(n == 0):
+        break;
+    elif(n <= 2):
+        print('Gratis')
+        jumlah+=0
+        print("Running Total", jumlah)
+    elif ( n >= 3 and n <= 12):
+        print("$14.00")
+        jumlah+=14.00
+        print("Running Total", jumlah)
+    elif (n >= 66):
+        print("$18.00")
+        jumlah+=18.00
+        print("Running Total", jumlah)
+    else:
+        print("$23,00")
+        jumlah+=23.00
+        print("Running Total", jumlah)
+
+uang=float(input('Masukkan Jumlah Uang: '))
+print('Running Kembalian: ',uang-jumlah)
