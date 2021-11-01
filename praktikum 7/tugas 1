@@ -1,0 +1,48 @@
+# TUGAS 1 PRAKTIKUM 7
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+JURUSAN: SISTEM INFORMASI
+WAKTU: SENIN, 1 NOVEMBER 2021
+"""
+
+def hasil(nilai='0',jumlah=0,tampung=0):
+    while(nilai!=0):
+       inputnilai= str(input('Masukkan Nilai:' ))
+       tampung=tampung+1
+       if(inputnilai==''):
+          return jumlah/(tampung-1)
+       elif inputnilai == 'A':
+          print('Nilai = 4.00')
+          jumlah+=4.00
+       elif inputnilai == 'A-':
+           print('nilai = 3.75')
+           jumlah+=3.75
+       elif inputnilai == 'B+':
+           print('nilai = 3.50')
+           jumlah+=3.50
+       elif inputnilai == 'B':
+           print('niali = 3.00')
+           jumlah+=3.00
+       elif inputnilai == 'B-':
+           print('nilai = 2.75')
+           jumlah+=2.75
+       elif inputnilai == 'C+':
+           print('nilai = 2.50')
+           jumlah+=2.50
+       elif inputnilai == 'C':
+           print('nilai = 2.00')
+           jumlah+=2.00
+       elif inputnilai == 'C-':
+           print('nilai = 1.75')
+           jumlah+=1.75
+       elif inputnilai == 'D':
+           print('nilai = 1.50')
+           jumlah+=1.50
+       elif inputnilai == 'E':
+           print('nilai = 1.25')
+           jumlah+=1.25
+       else:
+           print('Masukkan Angka Yang Sesuai')
+ratarata=hasil()
+print('rata ratanya adalah', ratarata)
