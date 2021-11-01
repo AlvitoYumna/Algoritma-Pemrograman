@@ -1,0 +1,40 @@
+def hasil(nilai='0',jumlah=0,tampung=0):
+    while(nilai!=0):
+       Nilai= str(input('Masukkan Nilai:' ))
+       tampung=tampung+1
+       if(Nilai==''):
+          return jumlah/(tampung-1)
+       elif Nilai == 'A':
+          print('Nilai = 4.00')
+          jumlah+=4.00
+       elif Nilai == 'A-':
+           print('nilai = 3.75')
+           jumlah+=3.75
+       elif Nilai == 'B+':
+           print('nilai = 3.50')
+           jumlah+=3.50
+       elif Nilai == 'B':
+           print('niali = 3.00')
+           jumlah+=3.00
+       elif Nilai == 'B-':
+           print('nilai = 2.75')
+           jumlah+=2.75
+       elif Nilai == 'C+':
+           print('nilai = 2.50')
+           jumlah+=2.50
+       elif Nilai == 'C':
+           print('nilai = 2.00')
+           jumlah+=2.00
+       elif Nilai == 'C-':
+           print('nilai = 1.75')
+           jumlah+=1.75
+       elif Nilai == 'D':
+           print('nilai = 1.50')
+           jumlah+=1.50
+       elif Nilai == 'E':
+           print('nilai = 1.25')
+           jumlah+=1.25
+       else:
+           print('Masukkan Angka Yang Sesuai')
+ratarata=hasil()
+print('rata ratanya adalah', ratarata)
