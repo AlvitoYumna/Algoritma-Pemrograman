@@ -1,0 +1,39 @@
+#TUGAS 2 PRAKTIKUM 7
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: JUM'AT,05-11-2021
+"""
+print ('Program ini akan menentukan jumlah hari dalam bulan tertentu')
+print('Masukkan 0 untuk menghentikan program')
+def total (Bulan=0,Tahun=0):
+ Bulan=True
+ while (Bulan):
+  Bulan+=Bulan
+  Bulan = int(input('Masukkan Bulan(1-12): '))
+  if(Bulan >= 13) and not Bulan == 0 :
+    print('Error')
+    print('Masukkan 0 untuk menghentikan program')
+    
+  elif(Bulan == 1 or Bulan == 3 or Bulan == 5 or Bulan == 7 or Bulan == 8 or Bulan == 10 or Bulan == 12):
+     print('31 hari dalam sebulan Pada Tahun',Tahun)
+     print('Masukkan 0 untuk menghentikan program')
+     
+  if(Bulan==2):
+    Tahun = int(input('Masukkan tahun: '))
+    if(Tahun %4==0 and Bulan==2):
+        print('29 hari dalam sebulan Pada Tahun',Tahun)
+        print('Masukkan 0 untuk menghentikan program ')
+    else:
+        print('28 hari dalam sebulan Pada Tahun',Tahun)
+        print('Masukkan 0 untuk menghentikan program ')
+        
+  elif(Bulan == 4 or Bulan == 6 or Bulan == 9 or Bulan == 11):
+    print('30 hari dalam sebulan Pada Tahun',Tahun)
+    print('Masukkan 0 untuk menghentikan program ')
+    
+  if(Bulan == 0):
+     return Bulan
+
+x = total()
+print ('Terima Kasih Telah Menggunakan Program Saya, Sampai Jumpa Lagi')
