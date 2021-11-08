@@ -1,0 +1,27 @@
+# TUGAS 1 PRAKTIKUM 8
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SENIN, 08-11-2021
+"""
+
+print('Program Ini Akan Menentukan Bilangan Prima Dan Bilangan Bukan Prima')
+
+def bil_prima(value):
+    if (value == 2 or value == 3 or value == 5 or value == 7) or\
+        (value % 2 != 0 and value % 3 != 0 and value % 5 != 0 and value % 7 != 0):
+        print('Angka',value,'Merupakan Bilangan Prima')
+    else:
+        bil_nonprima(value)
+def bil_nonprima(value):
+    if value>=1:
+        for i in range(2, value):
+            if (value % i)==0:
+                print('Angka',value,'Bukan Merupakan Bilangan Prima')
+                print('Karena',i,'x',value//i,'Hasilnya Adalah: ',value)
+                break
+            else:
+                ('')
+    
+hasil=int(input('Masukkan Angka:'))
+bil_prima(hasil)
