@@ -1,0 +1,34 @@
+# TUGAS 2 PRAKTIKUM 8
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: JUM'AT 12-NOVEMBER-2021
+"""
+x=True
+def kecil(nilai):
+    if (nilai%5)==1:
+        print('(',nilai,',',"'st'",')')
+    elif (nilai%10==2):
+        print('(',nilai,',',"'nd'",')')
+    elif (nilai%15==3):
+        print('(',nilai,',',"'rd'",')')
+    elif (nilai%10>=4)or(nilai%10==0):
+        print('(',nilai,',',"'th'",')')
+    else:
+        besar(nilai)
+        
+def besar(nilai):
+    if(nilai%5==3):
+        print('(',nilai,',',"'rd'",')')
+    elif(nilai%5==4):
+        print('(',nilai,',',"'th'",')')
+
+while(x==True):
+    print('Masukkan 0 Untuk Menghentikan Program')
+    nilai=int(input('Masukkan Angka: '))
+    kecil(nilai)
+    if (nilai==0):
+        x=False
+        print(0,"'th'")
+        print('Terima Kasih Telah Menggunakan Program Saya')
+kecil(nilai)        
