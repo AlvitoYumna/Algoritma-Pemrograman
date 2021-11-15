@@ -1,0 +1,23 @@
+# TUGAS 1 PRAKTIKUM 9
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SENIN,15-NOVEMBER-2021
+"""
+
+def rekursif (total=0,jumlah=0,i=1):
+    if (jumlah <= 0):
+        x = 0
+        return x
+    else :
+        total = int(input('Masukkan Angka Ke-' + str(i)+ ': '))
+        if (jumlah == 1):
+            return total
+        else:
+            i+=1
+            return total + rekursif (total,jumlah-1,i)
+        
+        
+jumlah = int(input('Masukkan Angka: '))
+a = rekursif (jumlah = jumlah)
+print('Hasil Penjumlahannya Adalah '+ str(a))
