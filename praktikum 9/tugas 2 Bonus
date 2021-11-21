@@ -15,9 +15,9 @@ def DesiHexa(desihexa):
         return hasil       
 if x == 1: 
     desihexa = 0
-    print('Program ini akan mengubah Desimal menjadi Hexdesimal, Tekan -1 untuk mengakhiri')
+    print('Program Ini Akan Mengubah Desimal Menjadi Hexadesimal, Tekan -1 Untuk Mengakhiri Program')
     while desihexa != -1 :
-        desihexa=int (input ('Masukan interger desimal: '))
+        desihexa=int (input ('Masukkan Integer Desimal: '))
         if desihexa == -1:
             print('Program Selesai')
             break
@@ -29,7 +29,7 @@ def HexaDesi(hexadesi):
         return nilai       
 if x == 2:
     hexadesi = 0
-    print ('Program ini akan mengubah Hexadesimal menjadi Desimal, Tekan -1 untuk mengakhiri')
+    print ('Program Ini Akan Mengubah Hexadesimal Menjadi Desimal, Tekan -1 Untuk Mengakhiri Program')
     while hexadesi != -1 :
         hexadesi= int(input ('Masukkan Interger Hexadesimal: '),16)
         if hexadesi == -1:
