@@ -1,0 +1,36 @@
+# TUGAS 2 PRAKTIKUM 9
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: JUM'AT,19 NOVEMBER 2021
+"""
+
+def Pemangkatan(angka,pangkat):
+    if angka == 0 :
+        return 0
+    elif angka == 1:
+        return 1
+    else :
+        if pangkat > 1:
+            return angka * Pemangkatan(angka,pangkat-1)
+        elif pangkat == 1:
+            return angka
+        elif pangkat == 0:
+            return 1
+        elif pangkat < 0:
+            angkamin=1/(angka * Pemangkatan(angka,pangkat-1))
+            return angkamin
+        else:
+            print("Error")
+       
+def mulai(ang=0,pang=0):
+    print("Ini merupakan Program Pemangkatan positif dan negatif, Tekan enter untuk berhenti")
+    ang = int(input("Masukkan Angka : "))
+    pang = int(input("Masukkan Pangkatnya: "))
+    hasil = Pemangkatan (angka=ang,pangkat=pang)
+    print("Hasilnya adalah: ",hasil)
+    
+        
+mulai()
+    
+    
