@@ -1,0 +1,40 @@
+# TUGAS 2 PRAKTIKUM 9 BONUS
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SABTU,20 NOVEMBER 2021
+"""
+
+print('Tekan 1 untuk mengubah Desimal menjadi Hexadesimal')
+print('Tekan 2 untuk mengubah Hexadesimal menjadi Desimal')
+    
+x = int (input (''))
+def DesiHexa(desihexa):
+        nilai = hex (desihexa)
+        hasil = print(nilai)
+        return hasil       
+if x == 1: 
+    desihexa = 0
+    print('Program ini akan mengubah Desimal menjadi Hexdesimal, Tekan -1 untuk mengakhiri')
+    while desihexa != -1 :
+        desihexa=int (input ('Masukan interger desimal: '))
+        if desihexa == -1:
+            print('Program Selesai')
+            break
+        else:
+            DesiHexa(desihexa)   
+            
+def HexaDesi(hexadesi):
+        nilai = print(hexadesi)
+        return nilai       
+if x == 2:
+    hexadesi = 0
+    print ('Program ini akan mengubah Hexadesimal menjadi Desimal, Tekan -1 untuk mengakhiri')
+    while hexadesi != -1 :
+        hexadesi= int(input ('Masukkan Interger Hexadesimal: '),16)
+        if hexadesi == -1:
+            print ('Program Selesai')
+            break 
+        else:
+            HexaDesi(hexadesi)
+
