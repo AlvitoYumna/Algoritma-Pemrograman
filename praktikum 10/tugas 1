@@ -1,0 +1,29 @@
+# TUGAS 1 PRAKTIKUM 10
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: JUM'AT, 26 NOVEMBER 2021
+"""
+print ('Selamat Datang Di Program Biodata')
+def inputan (biodata):
+    file = open ('Biodata.txt','w')
+    file.write(biodata)
+    file.close()
+    
+def baca ():
+    file = open ('Biodata.txt', 'r')
+    text = file.read()
+    print(text)
+    file.close
+    
+nama = input ('Masukkan Namamu: ')
+usia = input ('Masukkan Usiamu: ')
+alamat = input ('Masukkan Alamatmu: ')
+email = input ('Masukkan Alamat Emailmu: ')
+pengajar = input ('Masukkan Dosen Walimu: ')
+biodata = 'Nama: {}\nUsia: {}\nAlamat: {}\nEmail: {}\nPengajar: {}'.format(nama,usia,alamat,email,pengajar)
+print('')
+print('Biodata Anda Adalah')
+print('===================')
+inputan(biodata)
+baca()
