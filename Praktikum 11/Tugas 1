@@ -17,7 +17,7 @@ def bubbleSort(list):
 bubbleSort(list)
 print("Sesudah Di Sorting", list)
 
-def binarySearch(data, num_find):
+def binarySearch(array, num_find):
     start = 0
     end = len(list) - 1
     mid = (start + end)//2
