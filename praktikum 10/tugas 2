@@ -1,0 +1,76 @@
+# TUGAS 2 PRAKTIKUM 10
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SELASA, 30 NOVEMBER 2021
+"""
+
+x = False
+
+def tulis (data):
+    file = open(NamaFile+'.txt', 'w')
+    file.write(data)
+    file.close()
+    
+def baca():
+    file = open(NamaFile+'.txt', 'r')
+    text = file.read()
+    print(text)
+    file.close()
+    
+def tambah(data):
+    file = open(NamaFile+'.txt', 'a')
+    file.write(data)
+    file.close()
+    
+while (not x) :
+    try:
+        print ('')
+        print ('xxxxxxx SELAMAT DATANG xxxxxxx')
+        print ('')
+        print('==== PROGRAM FILE HANDLING ====')
+        print('1. Membuat dan Menulis File')
+        print('2. Membaca File')
+        print('3. Menambahkan Text Pada File')
+        print('4. Keluar dari Program')
+        print('')
+        pilih=int(input('Masukkan Pilihan Berupa Angka (1/2/3/4): '))
+        
+        
+        if pilih == 4 :
+            x = True
+            print('Terima Kasih Sudah Menggunakan Program Saya')
+            
+        elif pilih == 1:
+            NamaFile = input('Masukkan Nama File: ')
+            nama = input('Masukkan Namamu: ')
+            nim = int(input('Masukkan NIM kamu: '))
+            tahun = int(input('Masukkan Tahun Angkatanmu: '))
+            data = 'Nama: {}\nNIM: {}\nAngkatan: {}'.format(nama,nim,tahun)
+            tulis(data)
+            print('\n\nFile Berhasil dibuat\n\n')
+            
+        elif pilih == 2:
+            NamaFile = input('Masukkan Nama File: ')
+            print('')
+            print('')
+            baca ()
+            print ('')
+            print ('')
+            
+        elif pilih == 3:
+            NamaFile = input('Masukkan Nama File: ')
+            Nama = input('Masukkan Nama Temanmu: ')
+            Tambahan = input('Masukkan Catatan Tambahan Kamu: ')
+            data = '\nNama Teman: {}\nCatatan: {}'.format(Nama,Tambahan)
+            print('')
+            tambah (data)
+            print('\n\nFile Berhasil Ditambahkan\n\n')
+        else :
+            print('\nDATA INVALID!!\nUlangi lagi!!!\n')
+            
+    except ValueError:
+        print('\n\nERROR!!\nMasukkan Data Dengan Benar!\n\n\n')
+    except FileNotFoundError:
+        print('\n\nERROR!!\nFile Yang Dicari Tidak Ada!\n\nTulis nama file dengan benar!\n\n')
+        
