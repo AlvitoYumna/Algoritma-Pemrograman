@@ -1,0 +1,23 @@
+# TUGAS 2 PRAKTIKUM 11
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: SABTU, 04 DESEMBER 2021
+"""
+
+def bubbleSort(angka):
+    x = 0
+    for sort in range(len(angka)-1):
+        if angka[sort] > angka[sort + 1]:
+            angka[sort],angka[sort + 1] = angka[sort + 1],angka[sort]
+            x += 1
+            if x == 0:
+                return angka
+            else:
+                bubbleSort(angka)
+
+angka = [3,4,1,5,8,9,-2]
+bubbleSort (angka)
+print('List Yang Sudah Disorting')
+print ()
+print (angka)
