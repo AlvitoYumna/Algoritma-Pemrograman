@@ -6,22 +6,24 @@ WAKTU: SENIN, 06 DESEMBER 2021
 """
 
 class Mahasiswa:
+    total = 0
     def __init__(self, nama, nim, tahun):
         self.nama = nama
         self.nim =  nim
         self.tahun = tahun
+        Mahasiswa.total += 1
         
     def printMahasiswa (self):
         print ('Nama: ' + self.nama)
         print ('Nim: ' + str (self.nim))
         print ('Angkatan: ' + str (self.tahun))
         
-nama = input('Masukkan Namamu: ')
-nim = str(input('Masukkan NIM Kamu: '))
-tahun = str(input('Masukkan Tahun Angkatanmu: '))
+nama = input ('Masukkan Namamu: ')
+nim = str (input('Masukkan NIM Kamu: '))
+tahun = str (input('Masukkan Tahun Angkatanmu: '))
 print ()
 print ()
 maha = Mahasiswa (nama, nim, tahun)
 maha.printMahasiswa ()
 print ()
-print ('Total Mahasiswa 1')
+print ('Total Mahasiswa: ',Mahasiswa.total)
