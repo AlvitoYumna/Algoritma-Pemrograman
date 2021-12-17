@@ -1,0 +1,14 @@
+# TUGAS 1 PRAKTIKUM 13
+"""
+NAMA: ALVITO YUMNA SATRIO ARIANTO
+NIM: 065002100012
+WAKTU: JUM'AT, 17 DESEMBER 2021
+"""
+
+import pandas as pd
+df = pd.read_csv ("C:/Users/YMNA/Desktop/Negara.csv")
+mean = df.groupby(["Benua"]).mean()
+std = df.groupby(["Benua"]).std()
+print(df)
+print(mean)
+print(std)
